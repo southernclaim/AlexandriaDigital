@@ -1,0 +1,682 @@
+
+
+
+
+
+
+
+<html>
+<head>
+<title>Dom&iacute;nio P&uacute;blico - Pesquisa B&aacute;sica</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../css/css1.css" rel="stylesheet" type="text/css">
+<script LANGUAGE=javascript src="../script/util.js"></script>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<script language=Javascript>
+ function validar() {
+ regras[0] = new Regra('Tipo de Mídia',document.forms[1].co_midia.value,'');
+// regras[1] = new Regra('Tipo de Mídia',document.forms[1].co_categoria.value,'');
+ return validate(regras);
+ }
+</script>
+</head>
+<body>
+<!-- inclue o codigo do banner search -->
+<div
+  id="PopupDiv"
+  style="position:absolute; width:393px; height:105px; top:205px; left:30%; background-color:#FFFFFF; display:none; color:#000000; z-index:100">
+  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td height="1" bgcolor="#666666"></td>
+    </tr>
+  </table>
+  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="1" bgcolor="#666666"><img src="../img/dot_gray.gif" width="1" height="1"></td>
+      <td>
+        <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="105">
+              <div align="right"><img src="../img/animados/search.gif" width="50" height="50">&nbsp;&nbsp;</div>
+            </td>
+            <td><span class="top1">PESQUISANDO</span><br>
+              <span class="top1">AGUARDE...</span></td>
+          </tr>
+        </table>
+      </td>
+      <td width="1" bgcolor="#666666"><img src="../img/dot_gray.gif" width="1" height="1"></td>
+    </tr>
+  </table>
+  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td height="1" bgcolor="#666666"></td>
+    </tr>
+  </table>
+</div>
+<iframe
+  id="DivShim"
+  src="javascript:false;"
+  scrolling="no"
+  frameborder="0"
+  style="position:absolute; top:0px; left:0px; display:none;"> </iframe>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td><link href="../css/barra_do_governo.css" rel="stylesheet" media="all" type="text/css" />
+<div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
+	<ul id="menu-barra-temp" style="list-style:none;">
+		<li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
+			<a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a>
+		</li>
+		<li>
+			<a style="font-family:sans,sans-serif; text-decoration:none; color:white;" 
+				href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a>
+		</li>
+        </ul>
+</div>
+		<!--webbot bot="HTMLMarkup" startspan -->
+		</script>
+			<form name="governo" style="display:none;">
+			</form>
+
+
+
+<script language="JavaScript">
+<!--
+   function nova_jan(newwindow)
+   {
+      var desktop = window.open(newwindow,'new_window','toolbar=yes,location=yes,directories=yes,status=yes,scrollbars=yes,menubar=yes,resizable=yes');
+   }
+
+<!--webbot bot="HTMLMarkup" startspan -->
+</script>
+
+</td>
+	</tr>
+	<tr>
+		<td height="20"> 
+	
+	<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+			<td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="273"><a href="../pesquisa/PesquisaObraForm.jsp"><img alt="Portal Dom&iacute;nio P&uacute;blico - Biblioteca digital desenvolvida em software livre" border="0" height="60" src="../img/topsite/top1.gif" width="273"></a></td>
+				<td width="120" background="../img/topsite/top2.gif">&nbsp;</td>
+				<td class="background1"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+				  <tr>
+					<td width="120"><table width="120"  border="0" cellspacing="0" cellpadding="0">
+					  <tr>
+						<td width="10"><img src="../img/topsite/ponto.gif" width="6" height="6"></td>
+						<td class="top1"><a href="../Missao/Missao.jsp">Miss&atilde;o</a></td>
+					  </tr>
+					  <tr>
+						<td><img src="../img/topsite/ponto.gif" width="6" height="6"></td>
+						<td class="top1"><a href="../PoliticaDoAcervo/PoliticaDoAcervo.jsp">Pol&iacute;tica do Acervo</a> </td>
+					  </tr>
+					  <tr>
+						<td><img src="../img/topsite/ponto.gif" width="6" height="6"></td>
+						<td class="top1"><a href="../Indicadores/Estatisticas.jsp">Estatísticas</a></td>
+					  </tr>
+					</table></td>
+					<td width="120"><table width="144"  border="0" cellspacing="0" cellpadding="0">
+					  <tr>
+						<td width="8"><img src="../img/topsite/ponto.gif" width="6" height="6"></td>
+						<td width="136" class="top1"><a href="../FaleConosco/FaleConoscoForm.jsp">Fale Conosco</a> </td>
+					  </tr>
+					  <tr>
+						<td><img src="../img/topsite/ponto.gif" width="6" height="6"></td>
+						<td class="top1"><a href="../QueroColaborar/QueroColaborar.jsp">Quero Colaborar</a> </td>
+					  </tr>
+					  <tr>
+						<td><img src="../img/topsite/ponto.gif" width="6" height="6"></td>
+						<td class="top1"><a href="../Ajuda/Ajuda.jsp">Ajuda</a></td>
+					  </tr>
+					</table></td>
+					<!--
+					<td width="120"><table width="178"  border="0" cellspacing="0" cellpadding="0">
+					  <tr>
+						<td width="10"><img src="../img/topsite/ponto.gif" width="6" height="6"></td>
+						<td width="168" class="top1"><a href="../pesquisa/TopDownloadsIni.do?top=50&select_action=&tipoConsulta=1">Obras Mais Acessadas</a> </td>
+					  </tr>
+					  <tr>
+						<td class="top1">&nbsp;</td>
+					  </tr>
+					  <tr>
+						<td class="top1">&nbsp;</td>
+					</tr>
+					 </table>
+					</td>
+				  </tr>
+				</table></td>-->
+			  </tr>
+			</table>
+		</td>
+		  </tr>
+	</table>
+		
+
+	
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td height="20" valign="top">
+				<div align="right" class="legenda">Resolu&ccedil;&atilde;o
+				M&iacute;nima 800x600 pixels.</div>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td width="50%" valign="top"><form name="PesquisaObraActionForm" method="POST" action="/pesquisa/PesquisaObraForm.do" class="baseForm" onsubmit="DivSetVisible(true)">
+					<input type="hidden" name="co_obra" value="">
+					<input type="hidden" name="co_flag_periodico" value="0">
+					<table width="450" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="56">
+							<div align="right"><img src="../img/icones/lupa1.gif"
+								width="35" height="40"></div>
+							</td>
+							<td width="440"><img
+								src="../img/titulos/Pesquisa_basica.gif"
+								alt="Pesquisa B&aacute;sica - Selecione o crit&eacute;rio da pesquisa."
+								width="187" height="32"></td>
+						</tr>
+						<tr>
+							<td colspan="2">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td width="36">&nbsp;</td>
+									<td colspan="3">
+									<p>
+									<div class="top1">&nbsp;&nbsp;*&nbsp;&nbsp;Campo
+									Obrigat&oacute;rio</div>
+									</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td width="99" height="25" class="top1">
+									<div align="right">Tipo de M&iacute;dia *&nbsp;</div>
+									</td>
+									<td valign="middle"><select name="co_midia" onchange="javascript:document.forms[1].refresh_action.click();" class="top1 bordatexto2"><option value="" class="top1 bordatexto2">Escolha opção</option>
+<option value="5" class="top1 bordatexto2">Imagem</option>
+<option value="3" class="top1 bordatexto2">Som</option>
+<option value="2" class="top1 bordatexto2">Texto</option>
+<option value="6" class="top1 bordatexto2">Video</option></select></td>
+									<td class="top1"></td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td height="25" class="top1">
+									<div align="right">Categoria &nbsp;</div>
+									</td>
+									<td colspan="2"><select name="co_categoria" size="1" class="top1 bordatexto2"><option value="" class="top1 bordatexto2"></option></select></td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td height="25" class="top1">
+									<div align="right">Autor&nbsp;</div>
+									</td>
+									<td colspan="2"><input type="hidden" name="co_autor" value=""> <input type="text" name="no_autor" maxlength="70" size="40" value="" class="top1 bordatexto2"></td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td height="25" class="top1">
+									<div align="right">T&iacute;tulo&nbsp;</div>
+									</td>
+									<td colspan="2"><input type="text" name="ds_titulo" maxlength="70" size="40" value="" class="top1 bordatexto2"></td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td height="25" class="top1">
+									<div align="right">Idioma&nbsp;</div>
+									</td>
+									<td colspan="2"><select name="co_idioma" class="top1 bordatexto2"><option value="" class="top1 bordatexto2"></option>
+<option value="11" class="top1 bordatexto2">Alemão</option>
+<option value="18" class="top1 bordatexto2">Dinamarquês</option>
+<option value="7" class="top1 bordatexto2">Espanhol</option>
+<option value="12" class="top1 bordatexto2">Esperanto</option>
+<option value="19" class="top1 bordatexto2">Finlandês</option>
+<option value="10" class="top1 bordatexto2">Francês</option>
+<option value="8" class="top1 bordatexto2">Galego</option>
+<option value="17" class="top1 bordatexto2">Holandês</option>
+<option value="2" class="top1 bordatexto2">Inglês</option>
+<option value="15" class="top1 bordatexto2">Italiano</option>
+<option value="9" class="top1 bordatexto2">Latim</option>
+<option value="14" class="top1 bordatexto2">Norueguês</option>
+<option value="5" class="top1 bordatexto2">Não Aplicável</option>
+<option value="1" class="top1 bordatexto2">Português</option>
+<option value="16" class="top1 bordatexto2">Russo</option>
+<option value="13" class="top1 bordatexto2">Sueco</option>
+<option value="21" class="top1 bordatexto2">Sânscrito </option></select></td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td height="40" class="top1">&nbsp;</td>
+									<td colspan="2">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td width="80" valign="top"><a
+												href="javascript:document.forms[1].select_action.click()">
+											<img alt="Processar a Pesquisa" border="0" height="22"
+												src="../img/botoes/pesquisar.gif" width="68"></a> <input type="submit" name="select_action" accesskey="r" value="Submit" onclick="return validar();" class="myhidden">
+											</td>
+											<td valign="top"><a
+												href="javascript:document.forms[1].resetfull_action.click()"><img
+												alt="Limpar os campos de crit&eacute;rio" border="0"
+												height="22" src="../img/botoes/limpar.gif" width="68"></a>
+											<input type="submit" name="refresh_action" accesskey="r" value="Submit" class="myhidden"> <input type="submit" name="resetfull_action" accesskey="r" value="Submit" class="myhidden"></td>
+										</tr>
+									</table>
+									</td>
+								</tr>
+							</table>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+
+						<tr>
+							<td>&nbsp;</td>
+							<td><a
+								href="/pesquisa/ResultadoPesquisaObraForm.do?first=50&skip=0&ds_titulo=&co_autor=&no_autor=&co_categoria=134&pagina=1&select_action=Submit&co_midia=2&co_obra=&co_idioma=&colunaOrdenar=DS_TITULO&ordem=null"
+								style="border: 0px solid white; position: absolute; color: white;">
+							<img src="../img/titulos/legislacao_menor.jpg" border="0"/> </a></td>
+						</tr>						
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td><a
+								href="/pesquisa/ResultadoPesquisaObraForm.do?first=50&skip=0&ds_titulo=&co_autor=&no_autor=&co_categoria=133&pagina=1&select_action=Submit&co_midia=2&co_obra=&co_idioma=&colunaOrdenar=DS_TITULO&ordem=null"
+								style="border: 0px solid white; position: absolute; color: white;">
+							<img src="../img/titulos/dominio_publico_banner_educadores.jpg" border="0" /> </a></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td><a
+								href="/pesquisa/ResultadoPesquisaObraForm.do?first=50&skip=0&ds_titulo=&co_autor=&no_autor=&co_categoria=132&pagina=1&select_action=Submit&co_midia=2&co_obra=&co_idioma=&colunaOrdenar=DS_TITULO&ordem=null"
+								style="border: 0px solid white; position: absolute; color: white;">
+							<img src="../img/titulos/dominio_publico_banner_africa.jpg" border="0" /> </a></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+							<table align="right" border="0">
+								<tr align="center">
+									<td width="50%" valign="top">
+									<div class="top1" align="left"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+										src="../img/titulos/pesquisa_titulo.gif"
+										style="display: none;"></b></div>
+									<br>
+									<table width="290" border="0" cellspacing="1" cellpadding="1">
+										<tr>
+											<td colspan="3"><img src="../img/titulos/linha_div.gif"></td>
+										</tr>
+										<tr>
+											<td width="10">&nbsp;</td>
+											<td width="80">
+											<div align="center"><a href="PesquisaConteudoForm.jsp"><img
+												src="../img/icones/pesq_conteudo.gif" width="53" height="55"
+												border="0"></a></div>
+											</td>
+											<td><a href="PesquisaConteudoForm.jsp"><img
+												src="../img/titulos/pesq_conteudo.gif"
+												alt="Pesquisa por Conte&uacute;do" width="165" height="45"
+												border="0"></a></td>
+										</tr>
+										<tr>
+											<td colspan="3"><img src="../img/titulos/linha_div.gif"></td>
+										</tr>
+									</table>
+
+									<table width="290" border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td width="98" colspan="2">
+											<div align="center"><a href="PesquisaPeriodicoForm.jsp"><img
+												src="../img/icones/pesq_periodico.gif" width="53"
+												height="55" border="0"></a></div>
+											</td>
+											<td><a href="PesquisaPeriodicoForm.jsp"><img
+												src="../img/titulos/pesq_periodico.gif"
+												alt="Pesquisa por Periodicos CAPES" border="0"></a></td>
+										</tr>
+										<tr>
+											<td colspan="3"><img src="../img/titulos/linha_div.gif"></td>
+										</tr>
+									</table>
+
+									<table width="290" border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td width="10">&nbsp;</td>
+											<td width="80" height="55">
+											<div align="center"><a
+												href="PesquisaAutorForm.do?select_action="><img
+												src="../img/icones/pesq_nome_autor.gif" width="66"
+												height="33" border="0"></a></div>
+											</td>
+											<td><a href="PesquisaAutorForm.do?select_action="><img
+												src="../img/titulos/Pesquisa_nome_autor.gif"
+												alt="Pesquisa por Nome do Autor" width="186" height="34"
+												border="0"></a></td>
+										</tr>
+										<tr>
+											<td colspan="3"><img src="../img/titulos/linha_div.gif"></td>
+										</tr>
+									</table>
+									<br>
+									<br>
+									<table width="290" border="0" cellspacing="2" cellpadding="2">
+									
+										<tr>
+											<td width="98" colspan="2">
+												<div align="center">&nbsp;</div>
+											</td>
+											<td>
+												<a
+													href="/cadastro/colaboradorAntigoAction.do?op=iniciar"
+													style="border: 0px solid white; position: absolute; color: white;">
+													<img src="../img/titulos/banner_dominio_pequeno.jpg" border="0" /> </a>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="3">&nbsp;</td>
+										</tr>
+										<tr>
+											<td colspan="3">&nbsp;</td>
+										</tr>
+									
+										<tr>
+											<td width="98" colspan="2">
+												<div align="center">&nbsp;</div>
+											</td>
+											<td>
+												<a href="http://acessolivre.capes.gov.br/" target="_blank"> 
+													<img src="../img/diversos/acessolivre_modelo.gif" height="55" width="280" border="0"/> 
+												</a>
+											</td>
+										</tr>
+									
+									</table>
+
+									</td>
+								</tr>
+							</table>
+							</td>
+						</tr>
+					</table>
+					<br>
+					<br>
+				</form></td>
+				<td width="7">
+				<div align="center"></div>
+				</td>
+				<td width="50%" valign="top">
+				<div class="top1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+					src="../img/titulos/destaques.gif"></div>
+				<br>
+				<table width="290" border="0" cellspacing="1" cellpadding="1">
+					<tr>
+						<td colspan="3"><img src="../img/titulos/linha_div.gif"></td>
+					</tr>
+					<tr>
+						<td width="10%"><img src="../img/icones/machado.jpg"></td>
+						<td width="5%" align="center"></td>
+						<td width="90%" height="40">
+						<div align="left"><a
+							href="http://portal.mec.gov.br/machado/" target="#"> <font
+							face="Arial, Helvetica, sans-serif" size="1" color="#000000">
+						<b>Machado de Assis: obra completa</b> </font> </a></div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3"><img src="../img/titulos/linha_div.gif"></td>
+					</tr>
+					<tr>
+						<td width="10%"><img src="../img/icones/revista.gif"></td>
+						<td width="5%" align="center"></td>
+						<td width="90%" height="40">
+						<div align="left"><a
+							href="../pesquisa/ResultadoPesquisaObraForm.do?first=1&skip=0&ds_titulo=Plano%20de%20Desenvolvimento%20da%20Educa&co_autor=&no_autor=&co_categoria=44&pagina=1&select_action=Submit&co_midia=2&co_obra=&co_idioma=&colunaOrdenar=null&ordem=null"><font
+							face="Arial, Helvetica, sans-serif" size="1" color="#000000"><b>Plano
+						de Desenvolvimento da Educação</b></font></a></div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3"><img src="../img/titulos/linha_div.gif"></td>
+					</tr>
+					<tr>
+						<td width="10%"><img src="../img/icones/hino.gif"></td>
+						<td width="5%" align="center"></td>
+						<td width="90%" height="40">
+						<div align="left"><a
+							href="../pesquisa/ResultadoPesquisaObraForm.do?first=50&skip=0&ds_titulo=&co_autor=&no_autor=&co_categoria=96&pagina=1&select_action=Submit&co_midia=3&co_obra=&co_idioma=&colunaOrdenar=null&ordem=null"><font
+							face="Arial, Helvetica, sans-serif" size="1" color="#000000"><b>Música
+						Erudita Brasileira</b></font></a></div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3"><img src="../img/titulos/linha_div.gif"></td>
+					</tr>
+					<tr>
+						<td width="10%"><img src="../img/icones/livros.gif"></td>
+						<td width="5%" align="center"></td>
+						<td width="90%" height="40">
+						<div align="left"><a
+							href="../pesquisa/ResultadoPesquisaObraForm.do?first=50&skip=0&ds_titulo=&co_autor=&no_autor=Machado%20de%20Assis&co_categoria=2&pagina=1&select_action=Submit&co_midia=2&co_obra=&co_idioma=&colunaOrdenar=null&ordem=null"><font
+							face="Arial, Helvetica, sans-serif" size="1" color="#000000"><b>Obras
+						Machado de Assis</b></font></a></div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3"><img src="../img/titulos/linha_div.gif"></td>
+					</tr>
+
+
+					<!--			  <tr>-->
+					<!--	          	 <td width="10%"><img src="../img/icones/livros.gif"></td>-->
+					<!--				 <td width="5%" align="center"></td>-->
+					<!--                  <td width="90%" height="55"><div align="left"><a href="../pesquisa/ResultadoPesquisaObraForm.do?first=50&skip=0&ds_titulo=&co_autor=&no_autor=Shakespeare&co_categoria=2&pagina=1&select_action=Submit&co_midia=2&co_obra=&co_idioma=1&colunaOrdenar=DS_TITULO&ordem=null"><font face="Arial, Helvetica, sans-serif" size="1" color="#000000"><b>Shakespeare em português</b></font></a></div></td>-->
+					<!--			  </tr>-->
+					<!---->
+					<!---->
+					<!--	 	      <tr>-->
+					<!--	          	<td colspan="3"> <img src="../img/titulos/linha_div.gif"></td>-->
+					<!--			  </tr>-->
+
+					<tr>
+						<td width="10%"><img src="../img/icones/filme.gif"></td>
+						<td width="5%" align="center"></td>
+						<td width="90%" height="55">
+						<div align="left"><a
+							href="../pesquisa/ResultadoPesquisaObraForm.do?first=50&skip=0&ds_titulo=Paulo&co_autor=&no_autor=&co_categoria=102&pagina=1&select_action=Submit&co_midia=6&co_obra=&co_idioma=&colunaOrdenar=null&ordem=null"><font
+							face="Arial, Helvetica, sans-serif" size="1" color="#000000"><b>V&iacute;deo
+						Paulo Freire Contempor&acirc;neo</b></font></a></div>
+						</td>
+
+					</tr>
+					<tr>
+						<td colspan="3"><img src="../img/titulos/linha_div.gif"></td>
+					</tr>
+					<tr>
+						<td width="10%"><img src="../img/icones/livros.gif"></td>
+						<td width="5%" align="center"></td>
+						<td width="90%" height="55">
+						<div align="left"><a
+							href="../pesquisa/ResultadoPesquisaObraForm.do?first=50&skip=0&ds_titulo=&co_autor=&no_autor=Fernando%20Pessoa&co_categoria=2&pagina=1&select_action=Submit&co_midia=2&co_obra=&co_idioma=&colunaOrdenar=DS_TITULO&ordem=null"><font
+							face="Arial, Helvetica, sans-serif" size="1" color="#000000"><b>Poesia
+						de Fernando Pessoa</b></font></a></div>
+						</td>
+					</tr>
+					<!--   
+		   <tr>
+	          	 <td colspan="3"> <img src="../img/titulos/linha_div.gif"></td>
+			  </tr>
+			  <tr>
+	          	 <td width="10%"><img src="../img/icones/filme.gif"></td>
+				 <td width="5%" align="center"></td>
+                  <td width="90%" height="55"><div align="left"><a href="../pesquisa/ResultadoPesquisaObraForm.do?first=50&skip=0&ds_titulo=&co_autor=&no_autor=&co_categoria=29&pagina=1&select_action=Submit&co_midia=6&co_obra=&co_idioma=&colunaOrdenar=null&ordem=null"><font face="Arial, Helvetica, sans-serif" size="1" color="#000000"><b>Vídeos da TV Escola</b></font></a></div></td>
+			  </tr>
+		-->
+					<tr>
+						<td colspan="3"><img src="../img/titulos/linha_div.gif"></td>
+					</tr>
+					<tr>
+						<td width="10%"><img src="../img/icones/livros.gif"></td>
+						<td width="5%" align="center"></td>
+						<td width="90%" height="55">
+						<div align="left"><a
+							href="../pesquisa/ResultadoPesquisaObraForm.do?first=50&skip=0&ds_titulo=&co_autor=&no_autor=&co_categoria=33&pagina=1&select_action=Submit&co_midia=2&co_obra=&co_idioma=1&colunaOrdenar=null&ordem=null"><font
+							face="Arial, Helvetica, sans-serif" size="1" color="#000000"><b>Literatura
+						Infantil em português</b></font></a></div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3"><img src="../img/titulos/linha_div.gif"></td>
+					</tr>
+					<tr>
+						<td width="10%"><img src="../img/icones/livros.gif"></td>
+						<td width="5%" align="center"></td>
+						<td width="90%" height="55">
+						<div align="left"><a
+							href="../pesquisa/ResultadoPesquisaObraForm.do?first=50&skip=0&ds_titulo=A%20divina%20com&co_autor=&no_autor=&co_categoria=2&pagina=1&select_action=Submit&co_midia=2&co_obra=&co_idioma=1&colunaOrdenar=DS_TITULO&ordem=null"><font
+							face="Arial, Helvetica, sans-serif" size="1" color="#000000"><b>A
+						Divina Comédia em português</b></font></a></div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3"><img src="../img/titulos/linha_div.gif"></td>
+					</tr>
+					<tr>
+						<td width="10%"><img src="../img/icones/publicacoes.gif"></td>
+						<td width="5%" align="center"></td>
+						<td width="90%" height="55">
+						<div align="left"><a
+							href="../pesquisa/ResultadoPesquisaObraForm.do?first=50&skip=0&ds_titulo=&co_autor=&no_autor=&co_categoria=44&pagina=1&select_action=Submit&co_midia=2&co_obra=&co_idioma=&colunaOrdenar=null&ordem=null"><font
+							face="Arial, Helvetica, sans-serif" size="1" color="#000000"><b>Publicações
+						sobre educação</b></font></a></div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3"><img src="../img/titulos/linha_div.gif"></td>
+					</tr>
+					<tr>
+						<td width="10%"><img src="../img/icones/livros.gif"></td>
+						<td width="5%" align="center"></td>
+						<td width="90%" height="55">
+						<div align="left"><a
+							href="../pesquisa/PesquisaObraForm.do?select_action=&co_autor=55"><font
+							face="Arial, Helvetica, sans-serif" size="1" color="#000000"><b>Obras
+						de Joaquim Nabuco</b></font></a></div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3"><img src="../img/titulos/linha_div.gif"></td>
+					</tr>
+					<tr>
+						<td width="10%"><img src="../img/icones/hino.gif"></td>
+						<td width="5%" align="center"></td>
+						<td width="90%" height="55">
+						<div align="left"><a
+							href="../pesquisa/ResultadoPesquisaObraForm.do?first=50&skip=0&ds_titulo=&co_autor=&no_autor=&co_categoria=5&pagina=1&select_action=Submit&co_midia=3&co_obra=&co_idioma=1&colunaOrdenar=null&ordem=null"><font
+							face="Arial, Helvetica, sans-serif" size="1" color="#000000"><b>Hinos
+						brasileiros (coral e instrumental)</b></font></a></div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3"><img src="../img/titulos/linha_div.gif"></td>
+					</tr>
+
+				</table>
+				<br>
+				</td>
+			</tr>
+			<!--
+  <tr>
+    <td colspan="3"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="15%">&nbsp;</td>
+        <td align="center">
+		<br>
+		<a href="http://acessolivre.capes.gov.br/" target="_blank">
+		<img src="../img/diversos/acessolivre_modelo.gif" border="0">
+		</a>
+-->
+			<!--
+		<p class="top1"> 
+		Clique <a href="http://acessolivre.capes.gov.br/" target="_blank"><b>aqui</b></a> para acessar e saber mais sobre o Portal de Acesso Livre
+		</p>
+		-->
+			<!--	
+		  <p align="justify" class="top1">&nbsp;</p>
+          <p align="justify" class="top1">&nbsp;</p>
+          <p align="justify" class="top1">&nbsp;</p>
+          <p align="justify" class="top1"><strong>Digitaliza&ccedil;&atilde;o de  disserta&ccedil;&otilde;es e teses no Portal de Dom&iacute;nio P&uacute;blico</strong> </p>
+          <p align="justify" class="top1">Coordenadores de  cursos&nbsp;e estudantes de p&oacute;s-gradua&ccedil;&atilde;o, </p>
+          <p align="justify" class="top1">Em atendimento &agrave;  Portaria n&deg; 13/2006, publicada em 13 de fevereiro de 2006 pela Capes/MEC, as disserta&ccedil;&otilde;es e teses defendidas a partir de mar&ccedil;o  deste ano passam a ser disponibilizadas em ambiente internet. Para divulgar o  trabalho de conclus&atilde;o, o aluno deve procurar a coordena&ccedil;&atilde;o de seu respectivo  curso de mestrado ou doutorado, para que seja feita a inclus&atilde;o no aplicativo &quot;Cadastro  de Discentes&quot;, a ser disponibilizado, na primeira quinzena&nbsp; de maio,  pela Capes. </p>
+          <p align="right" class="top1">&nbsp;</p>
+        -->
+			<!--		
+		</td>
+		<td width="15%">&nbsp;</td>
+      </tr>
+    </table>
+</td>
+  </tr>
+ -->
+
+
+
+
+
+
+
+
+		</table>
+<script src="//static00.mec.gov.br/barragoverno/barra.js" type="text/javascript"></script>
+</body>
+
+<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	
+	<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-8511855-1");
+		pageTracker._trackPageview();
+		} catch(err) {}
+	</script>
+</html>
+
